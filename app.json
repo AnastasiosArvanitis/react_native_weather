@@ -1,0 +1,12 @@
+{
+  "name": "weather_demo",
+  "displayName": "weather_demo",
+  "expo": {
+    "name": "weather_demo",
+    "slug": "weather_demo",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
