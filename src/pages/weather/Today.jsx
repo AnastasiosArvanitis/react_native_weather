@@ -77,18 +77,27 @@ const Today = () => {
         }
     },[]);*/
 
+    const iconUrl = 'http:' + weatherData.current.condition.icon;
+
     return (
       <View style={styles.today}>
           <View style={styles.textInputView}>
               <TextInput
-                style={styles.searchInput}
-                onChangeText={text => setInputValue(text)}
-                value={inputValue}
+                  style={styles.searchInput}
+                  onChangeText={text => setInputValue(text)}
+                  value={inputValue}
               />
               <Button
                   title={"Search"}
                   onPress={getWeatherOnSearch(inputValue)}  />
           </View>
+
+          <Image
+              style={styles.imageW}
+              source={{
+                  uri: iconUrl,
+              }}
+          />
 
           <WeatherItem title='Name' value={weatherData.location.name} />
           <WeatherItem title='Condition' value={weatherData.current.condition.text}/>
@@ -124,6 +133,10 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         height: 40,
         paddingLeft: 8,
+    },
+    imageW: {
+        width: 100,
+        height: 100,
     }
 })
 
