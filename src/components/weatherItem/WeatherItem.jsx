@@ -13,10 +13,10 @@ const WeatherItem = ({title, value}) => {
 
 const styles= StyleSheet.create({
     item: {
-        marginBottom: 20,
+        marginBottom: 10,
     },
     text: {
-        color: '#350f8e',
+        color: '#083563',
         fontSize: 20,
     }
 });

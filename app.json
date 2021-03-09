@@ -2,11 +2,13 @@
   "name": "weather_demo",
   "displayName": "weather_demo",
   "expo": {
-    "name": "weather_demo",
-    "slug": "weather_demo",
+    "name": "react_native_weather",
+    "slug": "react_native_weather",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "description": "My first react native application! It's a simple weather app just to learn the fundamentals.",
+    "githubUrl": "https://github.com/AnastasiosArvanitis/react_native_weather"
   }
 }

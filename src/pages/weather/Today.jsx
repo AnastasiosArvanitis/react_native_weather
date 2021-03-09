@@ -82,6 +82,7 @@ const Today = () => {
     return (
       <View style={styles.today}>
           <View style={styles.textInputView}>
+              <Text style={styles.text}>Please chose a city...</Text>
               <TextInput
                   style={styles.searchInput}
                   onChangeText={text => setInputValue(text)}
@@ -116,23 +117,24 @@ const styles = StyleSheet.create({
     today: {
       height: '100%',
       width: '100%',
-      backgroundColor: '#e8abf8',
+      backgroundColor: '#87bdf4',
       padding: 30,
     },
 
     text: {
-        color: '#350f8e',
+        color: '#083563',
         fontSize: 20,
     },
     textInputView: {
-        marginBottom: 40,
+        marginBottom: 20,
     },
     searchInput: {
-        borderColor: '#0d1c5c',
+        borderColor: '#083563',
         borderRadius: 3,
         borderWidth: 2,
         height: 40,
         paddingLeft: 8,
+        marginBottom: 5,
     },
     imageW: {
         width: 100,

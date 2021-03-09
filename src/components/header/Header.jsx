@@ -14,13 +14,13 @@ const Header = () => {
 const styles = StyleSheet.create({
     box: {
         height: 120,
-        backgroundColor: '#e87e41',
+        backgroundColor: '#083563',
         justifyContent: 'center',
         alignItems: 'center',
         paddingTop: 10
     },
     title: {
-        color: 'blue',
+        color: '#eeeded',
         fontSize: 40,
 
     }
