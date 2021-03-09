@@ -4,29 +4,29 @@ import { StyleSheet, View, Text, Button, TouchableOpacity } from "react-native";
 const Home = ({navigation}) => {
     return (
         <View style={styles.homeLayout}>
-            <View style={styles.linksArea}>
-                <TouchableOpacity onPress={ () => {
-                    navigation.navigate('Geo');
-                }}>
+            <TouchableOpacity onPress={ () => {
+                navigation.navigate('Geo');
+            }}>
+                <View style={styles.linksArea}>
                     <Text style={styles.linksText}>
-                        Geolocalisation
+                        Geolocation
                     </Text>
-                </TouchableOpacity>
-            </View>
+                </View>
+            </TouchableOpacity>
             <View style={styles.orArea}>
                 <Text style={styles.linksText}>
                     or
                 </Text>
             </View>
-            <View style={styles.linksArea}>
-                <TouchableOpacity onPress={ () => {
-                    navigation.navigate('Today');
-                }}>
+            <TouchableOpacity onPress={ () => {
+                navigation.navigate('Today');
+            }}>
+                <View style={styles.linksArea}>
                     <Text style={styles.linksText}>
                         Chose a city
                     </Text>
-                </TouchableOpacity>
-            </View>
+                </View>
+            </TouchableOpacity>
         </View>
     )
 }
@@ -42,7 +42,9 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         padding: 10,
         borderWidth: 1,
-        borderRadius: 3
+        borderRadius: 7,
+        width: 250,
+        alignItems: 'center',
     },
     linksText: {
         fontSize: 30,
