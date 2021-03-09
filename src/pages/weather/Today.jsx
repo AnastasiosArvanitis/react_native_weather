@@ -41,19 +41,6 @@ const Today = () => {
     const aqi = '&aqi=yes';
     const apiKey = '?key=38e76da25ee145cdbf8101233210703';
 
-    const getWeatherOnLoad = () => {
-        axios
-            .get(url + 'Patras' + apiKey).
-        then(res => {
-            console.log(`Response: ${res}`);
-            setWeatherData(res.data);
-            console.log(`Weather: ${weatherData}`);
-        })
-            .catch(error => {
-                console.log(error);
-            });
-    }
-
     const getWeatherOnSearch = (cityName) => {
         if (cityName) {
             axios
